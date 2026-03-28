@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection System</title>
+
+    <style>
+        body {
+            background: url('https://wallpapers.com/images/hd/neon-lights-tumblr-laptop-qgl8w9a1qjmip7p1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            animation: flicker 0.6s linear infinite;
+            width: 450px; /* Adjust width as needed */
+            margin: -20px auto; /* Center horizontally and adjust margin */
+        }
+
+        .flicker {
+            font-size: 4rem;
+            color: blue;
+            text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+            color: #fff;
+            animation: flicker 0.6s linear infinite;
+        }
+
+        @keyframes flicker {
+            0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100% {
+            text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+            }
+            1%, 6%, 11%, 16%, 21%, 26%, 31%, 36%, 41%, 46%, 51%, 56%, 61%, 66%, 71%, 76%, 81%, 86%, 91%, 96% {
+            text-shadow: none;
+            }
+        }
+
+      /* Reduce input and button size */
+        input[type="text"] {
+            font-size: 16px;
+         width: 350px; /* Adjust width as needed */
+         padding: 8px; /* Adjust padding as needed */
+         margin: 5px; /* Adjust margin as needed */
+        }
+
+        button {
+            font-size: 16px;
+         padding: 8px; /* Adjust padding as needed */
+         margin: 10px; /* Adjust margin as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flicker">
+        <center><h5>Phishing Detection System</h5></center>
+    </div>
+<div class="form-container">
+    <center>
+        <p style="color:white;font-size:28px;margin-bottom: 15px;">
+            We Fish Who Phish You!!!
+        </p>
+    </center>
+
+    <center>
+        <input type="text" id="urlInput" placeholder="Paste URL here">
+        <br>
+        <button onclick="checkPhishing()">Check</button>
+    </center>
+
+    <div id="resultPrompt" style="position: fixed; bottom: 30px; right: 30px; background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px; display: none;">
+        <strong>Result:</strong> <span id="resultText"></span>
+    </div>
+</div>
+    <script>
+        function checkPhishing() {
+         // Implement your phishing check logic here
+            var resultPrompt = document.getElementById("resultPrompt");
+            var resultText = document.getElementById("resultText");
+
+         // Replace the following with your actual phishing check logic
+            if (0<=x && x<0.50) {
+            resultText.innerHTML = "Phishing!";
+            } else {
+            resultText.innerHTML = "Not Phishing!";
+            }
+
+            resultPrompt.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 62,5%;
+}
+
+body {
+  padding: 10% 5%;
+  justify-content: center;
+  align-items: center; 
+  background: url('https://wallpapers.com/images/hd/neon-lights-tumblr-laptop-qgl8w9a1qjmip7p1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.form__input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form__input:placeholder-shown + .form__label {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    border-radius: 5px;
+}
+
+button {
+font-size: 17px;
+padding: 7px; /* Adjust padding as needed */
+margin: 9px; /* Adjust margin as needed */
+border-radius: 6px; 
+appearance: button;
+background-color: transparent;
+background-color: rgba(255, 255, 255, 0.8);
+}
+
+.button:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgb(3, 1, 0),0px 1px 1px rgb(3, 1, 0);
+  transform: translateY(0.125rem);
+}
+
+.button:focus {
+  box-shadow: rgb(4, 2, 0) 0 0 0 4px, -6px 8px 10px rgb(5, 2, 0), 0px 2px 2px rgb(6, 3, 0);
+}
+
+
+.main-body{
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content:space-around;
+}
+
+.button1{
+  appearance: button;
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0 solid #e5e7eb;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #050200;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 60%;
+  font-weight: 450;
+  line-height: 22px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1 rem 1.5 rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(3, 1, 0, 0.963),0px 2px 2px rgb(10, 5, 0);
+  display: none;
+}
+
+.button2{
+  appearance: button;
+  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #070300;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 60%;
+  font-weight: 450;
+  line-height: 22px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1 rem 1.5 rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(6, 2, 0, 0.973),0px 2px 2px rgba(9, 4, 0, 0.986);
+  display: none;
+}
+
+.right {
+  right: 0px;
+  width: 300px; 
+}
+
+@media (max-width: 576px) { 
+  .form {
+    width: 100%;
+  }
+ }
+.abc{
+  width: 50%;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  animation: flicker 0.6s linear infinite;
+  width: 450px; /* Adjust width as needed */
+  margin: -20px auto; /* Center horizontally and adjust margin */
+}
+
+.url{
+  color:white;
+  font-size:28px;
+}
+
+.flicker {
+  font-size: 4rem;
+  color: blue;
+  text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+  color: #fff;
+  animation: flicker 0.6s linear infinite;
+}
+
+@keyframes flicker {
+  0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%, 95%, 100% {
+  text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+  }
+  1%, 6%, 11%, 16%, 21%, 26%, 31%, 36%, 41%, 46%, 51%, 56%, 61%, 66%, 71%, 76%, 81%, 86%, 91%, 96% {
+  text-shadow: none;
+  }
+}
