@@ -10,19 +10,19 @@ PHISHING DETECTION SYSTEM
 
 
 # TABLE OF CONTENT :-
-Introduction
-Installation
-Directory Tree
-Result
-Conclusion
+# Introduction
+# Installation
+# Directory Tree
+# Result
+# Conclusion
 
-#Introduction
+# Introduction
 
 The Internet has become an indispensable part of modern life. However, its widespread use has also created opportunities for malicious activities such as phishing. Phishing is a cyberattack technique where attackers attempt to deceive users through social engineering or by creating fraudulent websites that closely resemble legitimate ones. These attacks aim to steal sensitive information such as login credentials, account IDs, and passwords from individuals and organizations.
 
 Although several techniques have been developed to detect phishing websites, attackers continuously evolve their strategies to bypass these systems. Machine Learning (ML) has emerged as one of the most effective approaches for phishing detection, as it can identify patterns and common characteristics present in malicious URLs. This project leverages machine learning techniques to analyze and classify URLs as either safe or phishing based on their features.
 
-#Installation
+# Installation
 
 The project is developed using Python 3.6.10.
 
@@ -79,7 +79,8 @@ HTTPS usage
 Anchor URL behavior
 Website traffic
 
-<img width="638" height="441" alt="image" src="https://github.com/user-attachments/assets/157b02be-8c88-4a57-936e-65b361d8c32c" />
+![features_screenshot](https://github.com/user-attachments/assets/3a1e70d0-668a-45d3-8c4d-ef0c3be6bba9)
+
 
 
 These features play a crucial role in determining whether a URL is legitimate or malicious.
